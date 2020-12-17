@@ -48,5 +48,5 @@ switch t.Weekday(){
 	    t.Day())
 	
 	const version = "1.0.0.1"
-	fmt.Printf("日めくり数え番号" + comma + version + "\n")
+	fmt.Printf("日めくり数え番号" + comma + version + bal)
 }
