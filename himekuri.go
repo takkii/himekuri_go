@@ -35,9 +35,9 @@ switch t.Weekday(){
 	case time.Saturday:
 	fmt.Printf(comma + "土曜日" + bal)
 }
-
+	const Oneday = 366
 	fmt.Printf("来年の1月1日まであと" + comma + "%02d日です" + bal,
-		366 - t.YearDay())
+		Oneday - t.YearDay())
 	
 	fmt.Printf("令和%1d年%02d月%02d日" + comma + "R%02d年%02d月%02d日" + bal,
 		t.Year() - 2018,
