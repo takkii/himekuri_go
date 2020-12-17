@@ -6,9 +6,11 @@ import (
 )
 
 func main() {
+	// string keyword
 	const bal = "\n"
 	const comma = " : "
 	
+	// time
 	t := time.Now()
 	
 	fmt.Printf("時刻を表示" + comma + "%04d年%02d月%02d日" + comma +"%02d時%02d分%02d秒",
@@ -35,18 +37,22 @@ switch t.Weekday(){
 	case time.Saturday:
 	fmt.Printf(comma + "土曜日" + bal)
 }
-
+	// OneYear = 365 + 1 (uru calc) | Oneday = 366 
+	const Oneday = 366
+	
 	fmt.Printf("来年の1月1日まであと" + comma + "%02d日です" + bal,
-		366 - t.YearDay())
+		Oneday - t.YearDay())
 	
 	fmt.Printf("令和%1d年%02d月%02d日" + comma + "R%02d年%02d月%02d日" + bal,
 		t.Year() - 2018,
 		t.Month(),
 		t.Day(),
-	    t.Year() - 2018,
-	    t.Month(),
-	    t.Day())
+		t.Year() - 2018,
+		t.Month(),
+		t.Day())
 	
+	// version info
 	const version = "1.0.0.1"
+	
 	fmt.Printf("日めくり数え番号" + comma + version + bal)
 }
