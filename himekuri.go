@@ -6,9 +6,12 @@ import (
 )
 
 func main() {
+	const bal = "\n"
+	const comma = " : "
+	
 	t := time.Now()
 	
-	fmt.Printf("時刻を表示 : %04d年%02d月%02d日 : %02d時%02d分%02d秒",
+	fmt.Printf("時刻を表示" + comma + "%04d年%02d月%02d日" + comma +"%02d時%02d分%02d秒",
 	t.Year(),
 	t.Month(),
 	t.Day(),
@@ -18,25 +21,25 @@ func main() {
 
 switch t.Weekday(){
 	case time.Sunday:
-	fmt.Printf(" : 日曜日\n")
+	fmt.Printf(comma + "日曜日" + bal)
 	case time.Monday:
-	fmt.Printf(" : 月曜日\n")
+	fmt.Printf(comma + "月曜日" + bal)
 	case time.Tuesday:
-	fmt.Printf(" : 火曜日\n")
+	fmt.Printf(comma + "火曜日" + bal)
 	case time.Wednesday:
-	fmt.Printf(" : 水曜日\n")
+	fmt.Printf(comma + "水曜日" + bal)
 	case time.Thursday:
-	fmt.Printf(" : 木曜日\n")
+	fmt.Printf(comma + "木曜日" + bal)
 	case time.Friday:
-	fmt.Printf(" : 金曜日\n")
+	fmt.Printf(comma + "金曜日" + bal)
 	case time.Saturday:
-	fmt.Printf(" : 土曜日\n")
+	fmt.Printf(comma + "土曜日" + bal)
 }
 
-	fmt.Printf("来年の1月1日まであと : %02d日です\n",
+	fmt.Printf("来年の1月1日まであと" + comma + "%02d日です" + bal,
 		366 - t.YearDay())
 	
-	fmt.Printf("令和%02d年%02d月%02d日 : R%02d年%02d月%02d日\n",
+	fmt.Printf("令和%02d年%02d月%02d日" + comma + "R%02d年%02d月%02d日" + bal,
 		t.Year() - 2018,
 		t.Month(),
 		t.Day(),
@@ -45,6 +48,5 @@ switch t.Weekday(){
 	    t.Day())
 	
 	const version = "1.0.0"
-	const comma = " : "
 	fmt.Printf("日めくり数え番号" + comma + version + "\n")
 }
