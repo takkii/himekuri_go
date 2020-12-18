@@ -10,14 +10,13 @@ class HimekuriGoBasic
   def self.before
     # vesion info
     ruby_version = (RUBY_VERSION).to_s
-    version = (HimekuriTs::VERSION).to_s
+    version = (HimekuriGo::VERSION).to_s
     himekuri_go = "himekuri_go-".to_s + version.to_s
     go_path= "$HOME/.goenv/shims/go".to_s
     
     golang_path = go_path + " " + "run" + " "+  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_go + "/lib/himekuri_golang".to_s
-    stdout_ts, stderr_ts, status_ts = Open3.capture3(golang_path)
+    stdout_go, stderr_go, status_go = Open3.capture3(golang_path)
     
-    stdout_ts
-    # puts stderr_ts; puts status_ts
+    stdout_go
   end
 end
