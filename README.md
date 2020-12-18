@@ -3,6 +3,12 @@
 #### 環境構築
 
 ```markdown
+goenv
+go version go1.15.5 darwin/amd64
+
+rbenv
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin20]
+
 gem install himekuri_go
 
 himekuri_go
