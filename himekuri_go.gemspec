@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Takayuki Kamiyama"]
   spec.email         = ["karuma.reason@gmail.com"]
   spec.summary       = %q{日めくりGoです、呼び出すと現在時刻表示します。}
-  spec.description   = %q{Goでビルドしたシェルを呼びまします、現在時刻表示します。}
+  spec.description   = %q{Goで制作したGoファイルを呼びます、それにより現在時刻表示します}
   spec.license       = "MIT"
   spec.executables   = %w(himekuri_go)
   spec.homepage      = "http://rubyist.hatenablog.com"
