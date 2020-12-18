@@ -8,6 +8,12 @@ gem install himekuri_go
 himekuri_go
 ```
 
+### Rubyファイル、インスタンス発生
+
+```markdown
+puts HimekuriGoBasic.before
+```
+
 #### 現在出力
 
 ```markdown
