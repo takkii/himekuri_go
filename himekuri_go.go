@@ -43,6 +43,7 @@ switch t.Weekday(){
 	fmt.Printf("来年の1月1日まであと" + comma + "%02d日です" + bal,
 		Oneday - t.YearDay())
 	
+	// 令和%2d年 → 令和1x年
 	fmt.Printf("令和%1d年%02d月%02d日" + comma + "R%02d年%02d月%02d日" + bal,
 		t.Year() - 2018,
 		t.Month(),
