@@ -1,12 +1,15 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in himekuri_go.gemspec
+# Specify your gem's dependencies in himekuri2.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
-
-gem "rspec", "~> 3.0"
-
-gem "rubocop", "~> 0.80"
+gem "rake"
+gem "rspec"
+gem "rice"
+gem 'bundler'
+gem 'byebug'
+gem 'himekuri'
+gem 'himekuri_ts', git: 'https://github.com/takkii/himekuri_ts.git', branch: 'main' 
+gem 'pry'
+gem 'ruby-prof'
+gem 'solargraph'
