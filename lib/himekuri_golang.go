@@ -53,7 +53,7 @@ switch t.Weekday(){
 		t.Day())
 	
 	// version info
-	const version = "1.0.0.2"
+	const version = "1.0.0.3"
 	
 	fmt.Printf("日めくり数え番号" + comma + version + bal)
 }
