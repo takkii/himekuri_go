@@ -14,7 +14,7 @@ class HimekuriGoBasic
     himekuri_go = "himekuri_go-".to_s + version.to_s
     go_path= "$HOME/.goenv/shims/go".to_s
     
-    golang_path = go_path + " " + "run" + " "+  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/2.7.0/gems/" + himekuri_go + "/lib/himekuri_golang.go".to_s
+    golang_path = go_path + " " + "run" + " "+  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_version + "/gems/" + himekuri_go + "/lib/himekuri_golang.go".to_s
     stdout_go, stderr_go, status_go = Open3.capture3(golang_path)
     
     stdout_go
