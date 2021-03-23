@@ -7,7 +7,7 @@ goenv
 go version go1.15.5 darwin/amd64
 
 rbenv
-ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin20]
+ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin20]
 
 gem install himekuri_go
 
@@ -23,9 +23,9 @@ puts HimekuriGoBasic.before
 #### 現在出力
 
 ```markdown
-時刻を表示 : 2020年12月18日 : 16時19分43秒 : 金曜日
-来年の1月1日まであと : 13日です
-令和2年12月18日 : R02年12月18日
+時刻を表示 : 2021年03月23日 : 13時56分54秒 : 火曜日
+来年の1月1日まであと : 284日です
+令和3年03月23日 : R03年03月23日
 日めくり数え番号 : 1.0.0.3
 ```
 
