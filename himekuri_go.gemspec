@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Goで制作したGoファイルを呼びます、それにより現在時刻表示します}
   spec.license       = "MIT"
   spec.executables   = %w(himekuri_go)
-  spec.homepage      = "http://rubyist.hatenablog.com"
+  spec.homepage      = "https://github.com/takkii/himekuri_go"
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
